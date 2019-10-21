@@ -13,7 +13,12 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path,emoticon)
-  load_file(path)
+  hash = load_file(path)
+  if hash.include?(emoticon)
+    hash['get_meaning'][emoticon]
+  else
+    return "Sorry this is not a known emoticon."
+  end
   
   # code goes here
 end
