@@ -4,7 +4,7 @@ def load_library(path)
   require "yaml"
   hash = YAML.load_file(path)
   new_hash = {get_meaning: {}, get_emoticon: {}}
-  hash.each |key, value|
+  hash.each do |key, value|
   
   puts hash
   # code goes here
