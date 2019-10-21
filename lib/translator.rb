@@ -5,10 +5,9 @@ def load_library(path)
   hash = YAML.load_file(path)
   new_hash = {'get_meaning' => {}, 'get_emoticon' => {}}
   hash.each do |key, values|
-     new_hash['get_meaning'][values[0]] = key
+     new_hash['get_meaning'][values[1]] = key
   end
-  puts hash
-  puts new_hash
+  new_hash
   # code goes here
 end
 
