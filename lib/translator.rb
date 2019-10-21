@@ -9,7 +9,8 @@ def load_library(path)
      new_hash['get_meaning'][value[0]] = key.to_str
    end
   end
-  new_hash
+  puts hash
+  puts new_hash
   # code goes here
 end
 
