@@ -7,6 +7,7 @@ def load_library(path)
   hash.each do |key, values|
     hash.each do |value|
      new_hash[get_meaning][value] = key.to_str
+   end
   end
   new_hash
   # code goes here
