@@ -17,7 +17,7 @@ def get_japanese_emoticon(path,emoticon)
   if hash["get_emoticon"].include?(emoticon)
     hash['get_emoticon'][emoticon]
   else
-   return "Sorry this is not a known emoticon."
+   return "Sorry, that emoticon was not found"
   end
   
   # code goes here
